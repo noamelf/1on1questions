@@ -1,4 +1,4 @@
-FROM python:3.8
+FROM python:3.8-slim
 
 ENV APP_HOME /app
 WORKDIR $APP_HOME
@@ -9,6 +9,6 @@ RUN pip install poetry
 RUN poetry config virtualenvs.create false \
     && poetry install
 
-COPY app.py .
+COPY questions questions/
 
-CMD gunicorn --bind :${PORT-8080} --workers 1 --threads 8 app:app
+CMD exec gunicorn --bind :${PORT-8080} --workers 1 --threads 8 questions.app:app

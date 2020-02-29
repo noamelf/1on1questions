@@ -15,7 +15,7 @@ with open(questions_path) as f:
 def hello_world():
     question = random.choice(questions)['question']
 
-    return render_template('index.html', name=question)
+    return render_template('index.html', question=question)
 
 
 if __name__ == '__main__':
