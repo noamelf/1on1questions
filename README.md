@@ -1,4 +1,4 @@
-# 1on1questions
+# random1on1question
 
 A website that generates a random question for 1on1s, based on [VGraupera question list].
 
