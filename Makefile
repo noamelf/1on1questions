@@ -1,6 +1,6 @@
 COMMIT:=$(shell git rev-parse --verify --short HEAD)
 PROJECT:=questions-for-1on1s
-IMAGE_NAME:=qf1on1
+IMAGE_NAME:=questions-for-1on1s
 
 
 build:

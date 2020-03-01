@@ -1,30 +1,41 @@
 <!DOCTYPE html>
 <html>
-<style>.github-corner:hover .octo-arm {
-    animation: octocat-wave 560ms ease-in-out
-}
-
-@keyframes octocat-wave {
-    0%, 100% {
-        transform: rotate(0)
-    }
-    20%, 60% {
-        transform: rotate(-25deg)
-    }
-    40%, 80% {
-        transform: rotate(10deg)
-    }
-}
-
-@media (max-width: 500px) {
+<style>
     .github-corner:hover .octo-arm {
-        animation: none
-    }
-
-    .github-corner .octo-arm {
         animation: octocat-wave 560ms ease-in-out
     }
-}</style>
+
+    @keyframes octocat-wave {
+        0%, 100% {
+            transform: rotate(0)
+        }
+        20%, 60% {
+            transform: rotate(-25deg)
+        }
+        40%, 80% {
+            transform: rotate(10deg)
+        }
+    }
+
+    @media (max-width: 500px) {
+        .github-corner:hover .octo-arm {
+            animation: none
+        }
+
+        .github-corner .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+    }
+
+    footer {
+        bottom: 0;
+        left: 0;
+        position: fixed;
+        right: 0;
+        z-index: 30;
+    }
+
+</style>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -52,13 +63,15 @@
     </div>
 </section>
 
-{#<footer class="footer">#}
-{#  <div class="content has-text-centered">#}
-{#    <p>#}
-{#      <strong>1on1 questions</strong> by <a href="https://noamelf.com">Noam Elfanbaum</a>.#}
-{#        Built on top of <a href="https://github.com/VGraupera/1on1-questions">VGraupera 1on1 questions</a>#}
-{#    </p>#}
-{#  </div>#}
-{#</footer>#}
+<footer class="footer">
+    <div class="content has-text-centered wrapper">
+        <p>
+            <strong>Random 1on1 questions - spice up your 1on1s!</strong><br>
+            Built by <a href="https://noamelf.com">noamelf</a>, based on <a
+                href="https://github.com/VGraupera/1on1-questions">VGraupera
+            1on1 questions</a>
+        </p>
+    </div>
+</footer>
 </body>
 </html>
